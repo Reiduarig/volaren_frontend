@@ -1,0 +1,152 @@
+#recomenContainer {
+  width: 100%;
+  padding: 20px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+#recomenContainer h1{
+  font-weight: 600;
+}
+
+#recomendList {
+  animation: moveAcross 5s linear ;
+  animation-delay: -2s;
+  position: relative;
+  width: 100%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#recomendList .recomendCard {
+  margin: 30px auto;
+  background: rgb(223, 217, 217);
+  transition: all 500ms ease-in-out;
+  
+}
+
+#recomendList .recomendCard:hover {
+  transform: scale(1.1);
+}
+
+#recomendList .recomendCard #bar {
+  width: 300px;
+  height: 300px;
+  background: url(../../../assets/images/barcelonaLanding.png) no-repeat center center;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+#recomendList .recomendCard #par {
+  width: 300px;
+  height: 300px;
+  background: url(../../../assets/images/parisLanding.png) no-repeat center center;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+#recomendList .recomendCard #lon {
+  width: 300px;
+  height: 300px;
+  background: url(../../../assets/images/londresLanding.png) no-repeat center center;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+#recomendList .recomendCard h4 {
+  color: #000;
+  letter-spacing: 1px;
+  margin-left: 10px;
+  font-style: oblique;
+  font-weight: 600;
+}
+
+#recomendList .recomendCard .btn-recomend-search {
+  width: 100%;
+  background: #fa9579;
+  color: var(--app-primary-color);
+  font-weight: 600;
+  margin-top: 2px;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+#recomendList .recomendCard .btn-recomend-search:hover {
+  background: wheat;
+}
+
+#pruebaAnimacion{
+  animation-delay: -1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: moveAcross 10s linear ;
+}
+
+@media all and (max-width: 1000px) {
+  #recomendList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #recomendList {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes moveAcross {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.4, 1);
+  }
+  
+  from {
+    background-color: rgb(0, 0, 0);
+  }
+  to {
+    background-color: rgb(34, 34, 34);
+  }
+}
+
+@keyframes storm {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+}

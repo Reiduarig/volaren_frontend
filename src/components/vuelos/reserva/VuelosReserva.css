@@ -1,0 +1,937 @@
+/*--------------------- vuelo reserva ---------------*/
+
+.reservaContainer {
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding: 20px;
+  
+}
+
+.reservaContainer .errorMessages{
+  padding: 8px 50px;
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+}
+/*********************** cabecera  ***************************************/
+.infoCabecera #infoCabecera-header{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+.infoCabecera #infoCabecera-header img{
+  width: 200px;
+}
+.infoCabecera #infoCabecera-header span{
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.infoCabecera #infoCabecera-body{
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  font-size: 0.9em;
+  padding: 20px 0;
+  background: var(--app-secondary-color);
+  color: var(--app-primary-color);
+}
+
+
+.infoCabecera #infoCabecera-body #lineBox{
+  display: flex;
+  align-items: center;
+  
+}
+.infoCabecera #infoCabecera-body #lineBox span{
+  font-weight: 400;
+}
+.infoCabecera #infoCabecera-body #lineBox #lineBox-line{
+  width: 100%;
+  height: 1px;
+  border: 1px solid white;
+  background: white;
+}
+
+.infoCabecera #infoCabecera-body #infoCab-left{
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.infoCabecera #infoCabecera-body #infoCab-left #infoCab-left-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
+.infoCabecera #infoCabecera-body #infoCab-left #infoCab-left-header span{
+  padding: 0 5px;
+}
+
+.infoCabecera #infoCabecera-body #infoCab-left #infoCab-left-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.infoCabecera #infoCabecera-body #infoCab-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.infoCabecera #infoCabecera-body #infoCab-right{
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.infoCabecera #infoCabecera-body #infoCab-right #infoCab-right-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
+.infoCabecera #infoCabecera-body #infoCab-right #infoCab-right-header span{
+  padding: 0 5px;
+}
+.infoCabecera #infoCabecera-body #infoCab-right #infoCab-right-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.infoCabecera #infoCabecera-body2{
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  font-size: 0.9em;
+  padding: 20px 0;
+  background: var(--app-secondary-color);
+  color: var(--app-primary-color);
+}
+
+.infoCabecera #infoCabecera-body2 #lineBox{
+  display: flex;
+  align-items: center;
+  
+}
+.infoCabecera #infoCabecera-body2 #lineBox span{
+  font-weight: 400;
+}
+.infoCabecera #infoCabecera-body2 #lineBox #lineBox-line{
+  width: 100%;
+  height: 1px;
+  border: 1px solid white;
+  background: white;
+}
+
+.infoCabecera #infoCabecera-body2 #infoCab-left{
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.infoCabecera #infoCabecera-body2 #infoCab-left #infoCab-left-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
+.infoCabecera #infoCabecera-body2 #infoCab-left #infoCab-left-header span{
+  padding: 0 5px;
+}
+
+.infoCabecera #infoCabecera-body2 #infoCab-left #infoCab-left-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.infoCabecera #infoCabecera-body2 #infoCab-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.infoCabecera #infoCabecera-body2 #infoCab-right{
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.infoCabecera #infoCabecera-body2 #infoCab-right #infoCab-right-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
+.infoCabecera #infoCabecera-body2 #infoCab-right #infoCab-right-header span{
+  padding: 0 5px;
+}
+.infoCabecera #infoCabecera-body2 #infoCab-right #infoCab-right-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+
+.infoCabecera #infoCabecera-footer{
+  background: rgba(67, 250, 104, 0.5);
+  color:var(--app-primary-color);
+  font-weight: 600;
+  height: 30px;
+  font-size: 0.7em;
+  border-radius: 5px;
+}
+.infoCabecera #infoCabecera-footer p{
+  padding: 7px 10px ;
+  
+} 
+/*********************** seccion izquierda ********************************/
+.reservaContainer .sectionIzq{
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+}
+
+/*********************** seccion derecha carro ********************************/
+
+.reservaContainer .sectionInfo{
+  width: 100%;
+  position: absolute;
+  bottom:60px;
+  left: 0;
+}
+.reservaContainer .sectionInfo .carro-vuelo{
+  width: 100%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  font-size: 0.8em;
+  background: rgb(235, 247, 246);
+}
+
+.reservaContainer .sectionInfo .carro-vuelo .section{
+  border-right: 1px dotted lightgray;
+  padding: 0 10px;
+  padding: 10px; 
+  text-align: center;
+}
+.reservaContainer .sectionInfo .carro-vuelo .section h3{
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.reservaContainer .sectionInfo .carro-vuelo .section h4{
+  font-weight: 600;
+}
+.reservaContainer .sectionInfo .carro-vuelo .section p{
+  font-weight: 600;
+}
+.reservaContainer .sectionInfo .carro-vuelo .section svg{
+  color: grey;
+}
+
+/*********************************** section process ********************************/
+
+
+.reservaContainer .sectionBody{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 50px auto;
+}
+.reservaContainer .sectionBody .ant-tabs-nav{
+  margin-bottom: 70px;
+}
+.reservaContainer .botons-tabs{
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 150px 0 10px 0;
+}
+.reservaContainer .botons-tabs .process-tab-prev {
+  width: 80px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-weight: 600;
+  color: var(--app-primary-color);
+  padding: 5px 10px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  transition: 1s ease;
+  height: 35px;
+}
+.reservaContainer .botons-tabs .process-tab-next {
+  border-radius: 5px;
+  margin-right: 5px;
+  font-weight: 600;
+  color: var(--app-primary-color);
+  padding: 5px 10px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  transition: 1s ease;
+  height: 35px;
+}
+.reservaContainer .botons-tabs .process-tab-prev{
+  background: tomato;
+}
+.reservaContainer .botons-tabs .process-tab-prev:hover{
+  background: red;
+}
+.reservaContainer .botons-tabs .process-tab-next{
+  background: lightgreen;
+}
+.reservaContainer .botons-tabs .process-tab-next:hover{
+  background: green;
+}
+.reservaContainer  .botons-tabs .errorMessages{
+  margin: 0px 5px;
+}
+
+/*********************************** formulario pasajeros ***************************/
+
+.reservaContainer .datos-pasajeros{
+  padding: 10px;
+}
+.reservaContainer .info-pasajero .header-pasajero{
+  display: flex;
+  align-items: baseline;
+}
+
+.reservaContainer .info-pasajero .header-pasajero svg{
+  margin: 0px 6px;
+}
+.reservaContainer .info-pasajero .header-pasajero h4{
+  font-weight: 600;
+}
+
+.reservaContainer .info-pasajero .form-body {
+  width: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 0;
+}
+
+
+.reservaContainer .info-pasajero .form-body label{
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.reservaContainer .info-pasajero .form-body input{
+  border:none;
+  border:1px solid lightgray;
+  text-indent: 6px;
+  padding: 5px;
+  width: 300px;
+  outline: none;
+  height: 35px;
+}
+
+.reservaContainer .info-pasajero .form-body input:focus{
+  border:2px solid blue;
+}
+
+.reservaContainer .contacto-pasajero{
+  margin: 50px 0;
+}
+
+.reservaContainer .contacto-pasajero #header-contacto{
+  display: flex;
+  align-items: baseline;
+  margin: 20px 0;
+}
+.reservaContainer .contacto-pasajero h4{
+  font-weight: 600;
+}
+.reservaContainer .contacto-pasajero #contacto-form-body{
+  width: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: flex-end;
+ 
+}
+.reservaContainer .contacto-pasajero #contacto-form-body label{
+  font-weight: 600;
+}
+.reservaContainer .contacto-pasajero #contacto-form-body input{
+  border:none;
+  border:1px solid lightgray;
+  text-indent: 4px;
+  width: 300px;
+  padding: 5px;
+  outline: none;
+  height: 35px;
+}
+.contacto-pasajero #contacto-form-body input:focus{
+  border:2px solid blue;
+}
+/*--------------------------------- facturacion equipaje ----------------------------*/
+
+
+.equipaje-facturado h3{
+  font-weight: 600;
+}
+  
+
+.equipaje-facturado .imagen-maleta {
+  width: 200px;
+  height: 180px;
+  padding: 10px;
+  background-image: url(../../../assets/images/maletas.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.equipaje-facturado .maleta-anadir {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px 0;
+  font-size: 0.9em;
+  border-radius: 5px;
+}
+.equipaje-facturado .maleta-tarifa .spinner{
+  margin: 40px 0;
+  width: 100px;
+  height: 30px;
+}
+.equipaje-facturado .maleta-tarifa .spinner div {
+  width: 25px;
+  padding: 6px 5px;
+  background: var(--app-btn-color);
+  user-select: none;
+  cursor: pointer;
+  border-radius: 5px;
+  align-self: center;
+  font-weight: 600;
+  color: cornsilk;
+}
+
+.equipaje-facturado .maleta-tarifa .spinner div:hover {
+  background: tomato;
+}
+
+.equipaje-facturado .maleta-tarifa .spinner span {
+  flex: 1 auto;
+  margin: auto;
+  color: white !important;
+  font-size: 1.2em !important;
+}
+
+.equipaje-facturado .maleta-tarifa .spinner span #number {
+  margin: auto;
+}
+.equipaje-facturado #info-tarifa{
+  width: 50%;
+  
+  align-items: center;
+  font-size: 1.4em;
+  margin-top: 60px;
+}
+.equipaje-facturado #spinner-tarifa{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.equipaje-facturado #spinner-tarifa span:last-child{
+  font-size: 1.1em;
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 5px;
+}
+.equipaje-facturado .banner-factEq{
+  background-image: url(../../../assets/images/banner-maletas.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/*-------------------------  seguro equipaje -------------------------------*/
+.equipaje-extraviado {
+  width: 100%;
+  margin: 20px auto;
+  background: #fff;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+.equipaje-extraviado h3{
+  font-weight: 600;
+}
+.equipaje-extraviado label{
+  display: flex;
+  width: 40%;
+  margin-left: 20px;
+  
+}
+
+.equipaje-extraviado .servicio-options {
+  padding: 10px 0;
+}
+.equipaje-extraviado .maleta-anadir{
+  display: flex;
+  align-items: center;
+ 
+}
+.equipaje-extraviado .maleta-anadir span{
+  font-weight: 600;
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 5px;
+}
+.maleta-anadir .check-servicio{
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+
+.reservaContainer .pasar-pago {
+  margin-top: 40px;
+}
+.reservaContainer .pasar-pago a{
+  background: var(--app-secondary-color);
+  color: var(--app-primary-color);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.reservaContainer .pasar-pago a:hover{
+  background: navy;
+}
+
+.reservaContainer .pasar-pago #a-src-flyReserve{
+  padding: 15px;
+  margin: 10px;
+  color: var(--app-primary-color);
+  background: lightgreen;
+  border: none;
+  font-size: 1em;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+/*-----------------------------  transporte -------------------------------- */
+
+.ant-radio-group {
+
+  font-size: 14px !important;
+  
+}
+#container-transporte #transporte-header h3{
+ font-weight: 600;
+
+}
+#container-transporte{
+
+  margin: 0px auto 30px 0px;
+  border-radius: 5px;
+ 
+ 
+}
+#lista-docs-reserva .ant-card {
+  width: 300px !important;
+}
+#container-transporte #transporte-card #transporte-header{
+  margin-bottom: 20px;
+}
+#container-transporte #transporte-card #transporte-img{
+  width: 100%;
+  height: 120px;
+  background: url(../../../assets//images/shuttleninguno.png) no-repeat center;
+  background-size: contain;
+  margin-bottom: 40px;
+}
+#container-transporte #transporte-card #transporte-img1{
+  width: 100%;
+  height: 120px;
+  background: url(../../../assets//images/shuttleida.png) no-repeat center;
+  background-size: contain;
+  margin-bottom: 40px;
+}
+#container-transporte #transporte-card #transporte-img2{
+  width: 100%;
+  height: 120px;
+  background: url(../../../assets//images/shuttleidayvuelta.png) no-repeat center;
+  background-size: contain;
+  margin-bottom: 40px;
+}
+
+#container-transporte #transporte-card{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#container-transporte #transporte-card #transporte-body{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+#container-transporte #transporte-card #transporte-body #transporte-left{
+  width: 90%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+#container-transporte #transporte-card #transporte-body #transporte-center{
+  width: 90%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+#container-transporte #transporte-card #transporte-body #transporte-right{
+  width: 90%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+#container-transporte #transporte-card .ant-radio-group #transporte-body h4{
+  text-align: center;
+  font-weight: 600;
+}
+
+/*-------------------------  vuelo pago ----------------------------------*/
+
+#pagoContainer {
+ 
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+ 
+}
+#pagoContainer .res-datosFact {
+  display: grid;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  color: #000;
+  
+}
+#pagoContainer .res-datosFact #lista-datosFact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 10px;
+}
+#pagoContainer .res-datosFact #lista-datosFact #tipo-fact {
+  display: flex;
+  flex-direction: column;
+}
+#pagoContainer .res-datosFact #lista-datosFact #tipo-fact h4{
+  border-bottom: 1px solid black;
+  width: 60%;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+#pagoContainer .res-datosFact #lista-datosFact #tipo-fact .tipo-item {
+  font-size: 0.9em;
+}
+#pagoContainer .res-datosFact #lista-datosFact #tipo-fact img {
+  width: 60px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#pagoContainer .res-datosFact button {
+  width: 200px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background: blue;
+  color: var(--app-primary-color);
+  font-weight: 600;
+  margin: 40px 15px 0 15px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+#pagoContainer .res-datosFact button:hover {
+  background: navy;
+}
+
+#pagoContainer .facturacion-options{
+  display: flex;
+  font-weight: 600;
+  margin-left: 8px;
+  margin-bottom: 20px;
+}
+
+#pagoContainer .res-info-final {
+  display: flex;
+  flex-direction: column;
+  background: rgba(235, 221, 221, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.9em;
+  height: 300px;
+  max-height: 350px;
+}
+#pagoContainer .res-info-final table {
+  border-collapse: collapse;
+  margin: 30px 0;
+  overflow-x: scroll;
+}
+#pagoContainer .res-info-final table th,
+td {
+  padding: 8px 2px;
+}
+#pagoContainer .res-info-final table th{
+  font-size: 0.9em;
+  text-align: center;
+  border:none;
+  border-bottom: 1px solid black;
+  
+}
+#pagoContainer .res-info-final table tbody td {
+  border-bottom: 1px solid black;
+  text-align: end;
+}
+#pagoContainer .res-info-final table tfoot td {
+  font-weight: bold;
+  text-align: end;
+  font-size: 1.2em
+}
+#pagoContainer h3 {
+  font-weight: 600;
+}
+#pagoContainer .res-info-final p {
+  width: 80%;
+  font-size: 0.7em;
+  margin-top: 30px;
+}
+
+#pagoContainer #account-form .formUp{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#pagoContainer #account-form #paymentForm{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  align-items: center;
+}
+#pagoContainer #account-form #paymentForm #paymentFormInput label{
+  margin-bottom: 5px;
+}
+
+#pagoContainer #account-form label{
+  margin-bottom: 5px;
+}
+ 
+#pagoContainer #account-form input{
+  width: 80%;
+  margin-left: 5px;
+  border: none;
+  background: #fff;
+  border: 1px solid lightgray;
+  padding: 8px;
+  font-size: 1em;
+  color:black;
+  outline: none;
+}
+#pagoContainer #account-form input:focus{
+  border:2px solid blue;
+}
+
+/* -------------------------------------------- Vuelo pago Formulario -------------------------------*/
+
+@media all and (max-width: 800px) {
+  .reservaContainer{
+    font-size: 0.8em;
+    width: 100%;
+  }
+  .reservaContainer .sectionBody{
+    grid-template-columns: 1fr;
+  }
+  .pasajeroContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 40px;
+   
+  }
+  .reservaContainer .contacto-pasajero #contacto-form-body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+
+  
+  .reservaContainer .sectionDrc{
+    width: 100%;
+    padding: 0 10px;
+   
+  }
+  .reservaContainer .sectionDrc .carro-vuelo{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  .reservaContainer .sectionDrc .carro-vuelo h3, h4{
+    text-align: center;
+  }
+  .reservaContainer .sectionDrc .carro-vuelo p{
+    text-align: center;
+  }
+  .carro-vuelo .linea-carro {
+    left: 8px;
+    margin-top: 70px;
+  }
+ 
+  .reservaContainer .carro-vuelo #reserva-origen {
+    display: flex;
+    font-size: 0.9em;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  
+  #pagoContainer {
+    width: 100%;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.7em;
+   
+  }
+  #pagoContainer .res-datosFact #lista-datosFact {
+    padding: 10px 10px;
+  }
+  #pagoContainer .res-datosFact button {
+    width: 50%;
+    padding: 10px;
+    font-size: 1em;
+  }
+  #pagoContainer #account-form #paymentForm{
+   
+    grid-template-columns: 1fr;
+   
+  }
+  #pagoContainer #account-form #paymentForm .rccs{
+    margin-top: 20px;
+  }
+  .reservaContainer .botons-tabs{
+  
+    padding: 100px 0 10px 0;
+  }
+
+  
+}
+@media all and (max-width: 600px) {
+
+  .reservaContainer .sectionBody .ant-tabs-tab{
+    margin: 0 5px 0 0;
+  }
+  .reservaContainer .sectionBody .ant-tabs-nav{
+    margin-bottom: 30px;
+  }
+  
+  #pagoContainer {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr  1fr;
+    justify-content: space-around;
+  
+  }
+  .reservaContainer .sectionBody  .pasajeroContainer{
+    margin-bottom: 20px;
+  }
+  .reservaContainer .contacto-pasajero{
+    margin: 30px 0;
+  }
+  .reservaContainer .contacto-pasajero #contacto-form-body{
+    width: 100%;
+    margin-left: 8px;
+  }
+  .reservaContainer .info-pasajero .form-body {
+    width: 100%;
+  }
+  .reservaContainer .info-pasajero .form-body input{
+    width: 90%;
+  }
+  .reservaContainer .contacto-pasajero #contacto-form-body{
+    width: 100%;
+  }
+  .reservaContainer .contacto-pasajero #contacto-form-body input{
+    width: 90%;
+    
+  }
+
+  .reservaContainer .botons-tabs{
+    padding: 150px 0 10px 0;
+  }
+
+  #pagoContainer .res-datosFact {
+   font-size: 0.7em;
+    
+  }
+  #pagoContainer .res-datosFact #lista-datosFact {
+    padding: 10px 10px;
+  }
+
+  #pagoContainer .res-datosFact button {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.2em;
+  }
+  .reservaContainer .sectionInfo .carro-vuelo{
+   
+    margin: -15px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .equipaje-facturado .banner-factEq{
+    display: none;
+  }
+  .equipaje-facturado .maleta-anadir {
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+    font-size: 0.9em;
+    border-radius: 5px;
+  }
+  
+}
+
+

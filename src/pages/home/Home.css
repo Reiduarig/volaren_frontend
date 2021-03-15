@@ -1,0 +1,130 @@
+
+
+#section-srcHome i {
+  font-size: 1.3rem;
+}
+
+#section-srcHome #container-searchForm{
+  position: relative;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  
+}
+
+#section-srcHome .info {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-between;
+  max-height: 400px;
+  line-height: 2em;
+  font-size: 0.7em;
+  margin: 80px auto;
+  color: #654062;
+  background: #fff;
+  
+}
+#section-srcHome .info #infoText {
+  display: grid;
+  grid-template-rows: 10% 90%;
+  border: 1px solid #fa9579;
+  padding: 20px 40px;
+  border-radius:5px;
+}
+
+
+#section-srcHome .info h2 {
+  font-weight: 600;
+}
+
+#section-srcHome .info h3 {
+  
+  padding: 20px 40px;
+  margin: auto;
+}
+#section-srcHome .info img{
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+
+#section-srcHome .info i{
+  color: #fa9579;
+}
+
+#compInfoHome{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.container-banner{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #fa9579;
+  align-items: center;
+  padding: 10px;
+}
+
+.container-banner h3{
+  color: var(--app-primary-color);
+  font-weight: 600;
+}
+
+.container-banner .banner-card{
+  margin: auto;
+  text-align: center;
+  padding: 10px 20px;
+  color: var(--app-primary-color);
+}
+
+.container-banner .banner-card  #destino{
+  background-image: url(../../assets/images/destino.png) ;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+
+.container-banner .banner-card #calendario{
+  background-image: url(../../assets/images/calendar.png) ;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.container-banner .banner-card #pagos{
+  background-image: url(../../assets/images/pagos.png) ;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+@media all and (max-width: 800px) {
+ 
+#section-srcHome .info {
+ 
+  grid-template-columns: 1fr;
+ 
+  
+}
+#section-srcHome .info img{
+  display: none;
+}
+.container-banner{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+}
+@media all and (max-width: 600px) {
+#section-srcHome .info h2 {
+  font-size: 1.3em;
+}
+
+}
+

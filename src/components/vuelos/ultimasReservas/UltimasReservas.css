@@ -1,0 +1,37 @@
+
+#ultimasReservas{
+    width: 70%;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: var(--app-secondary-color);
+    box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109),
+    0 1px 1px rgba(128, 128, 128, 0.155),
+    0 2.1px 2.1px rgba(128, 128, 128, 0.195),
+    0 4.4px 4.4px rgba(128, 128, 128, 0.241),
+    0 12px 12px rgba(128, 128, 128, 0.35);
+  }
+  #ultimasReservas h4{
+      color: var(--app-primary-color);;
+  }
+  #ultimasReservas table th,td{
+      border: none;
+      font-size: 0.8em;
+      text-align: center;
+  }
+
+  #ultimasReservas table{
+      width: 100%;
+      padding: 10px;
+      background: cornsilk;
+      border-radius: 4px;
+  }
+
+  #ultimasReservas table tr:hover{
+      background: rgb(31, 44, 126);
+      color:rgb(225, 222, 222)
+  }
+
+  #ultimasReservas  tr:nth-of-type(odd) { 
+	background: rgb(225, 222, 222); 
+	}

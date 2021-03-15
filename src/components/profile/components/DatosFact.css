@@ -1,0 +1,127 @@
+/*-------------------- datos facturacion --------------------*/
+
+.account{
+    width: 90%;
+    color:black;
+    padding: 60px 20px;
+  }
+
+  .account #account-datos-header{
+    padding: 2px;
+    text-indent: 4px;
+    color: var(--app-primary-color);
+  }
+
+  .account form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .account form .form-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 10px 0;
+  }
+
+  .account form .lbl-txt{
+    top: -3em;
+    color: var(--app-secondary-color);
+    font-weight: 600;
+    font-size: 0.9em;
+  }
+
+  .account form .form-group input{
+    width: 80%;
+    border: none;
+    background: #fff;
+    padding: 8px;
+    font-size: 1em;
+    color:black;
+    outline: none;
+    border: 1px solid lightgray;
+  }
+
+  .account form .form-group input:focus{
+    border:1px solid blue;
+  }
+
+  .account form #paymentForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 0;
+  }
+
+  .account form #paymentForm .rccs{
+    margin: 50px 0;
+  }
+
+  .account form #paymentFormInputs input{
+    width: 60%;
+    border: none;
+    background: #fff;
+    padding: 8px;
+    font-size: 1em;
+    color:black;
+    outline: none;
+    border: 1px solid lightgray;
+  }
+  .account form #paymentFormInputs input:focus{
+    border: 1px solid blue;
+  }
+
+  .account form button{
+    width: 30%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .account form button:hover{
+    background-color: green;
+  }
+
+  
+@media all and (max-width: 800px) {
+
+  
+.account{
+  width: 100%;
+  margin: auto;
+}
+
+.account form .form-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    font-size: 0.8em;
+  }
+
+
+.account form #paymentForm{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px 0;
+    font-size: 0.9em;
+  }  
+}
+
+@media all and (max-width: 600px) {
+  .account form #paymentForm{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 0 20px 0;
+    font-size: 0.9em;
+  }  
+  .account form button{
+    width: 100%;
+    margin-top: 10px;
+  }
+}

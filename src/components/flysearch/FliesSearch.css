@@ -1,0 +1,323 @@
+#container-searchForm .carousel-track .carousel-item {
+  max-height: 500px;
+  animation-name: storm;
+  animation-duration: 20s;
+}
+
+#fliesForm {
+  background: rgba(46, 65, 97, 0.9);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  position: absolute;
+  bottom: -10px;
+  z-index: 50;
+  right: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109),
+    0 1px 1px rgba(135, 134, 134, 0.155),
+    0 2.1px 2.1px rgba(128, 128, 128, 0.195),
+    0 4.4px 4.4px rgba(128, 128, 128, 0.241),
+    0 12px 12px rgba(128, 128, 128, 0.35);
+}
+
+#fliesForm label {
+  display: flex;
+  position: relative;
+  align-items: center;
+  color: #fac336;
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+#fliesForm label i{
+  font-size: 1.3em;
+}
+
+#fliesForm .shadow {
+  background: rgba(179, 177, 177, 0.2);
+  color:  var(--app-primary-color);
+  border-radius: 5px;
+  height: 40px;
+  text-align: center;
+}
+
+#fliesForm #fliesform-body {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+#fliesForm #fliesform-footer {
+ 
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+#fliesform-footer #spinner-personas {
+  width: 40%;
+  height: 40px;
+  display: grid;
+  padding: 0 10px;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  
+  
+}
+#fliesform-footer #spinner-personas .spinner{
+  height: 25px;
+}
+
+#fliesform-footer #spinner-personas .spinner div{
+  padding: 4px;
+}
+
+#fliesform-footer #spinner-personas span {
+  color: #fac336;
+ 
+}
+#fliesform-footer label{
+
+  font-size: 1em;
+  
+}
+#fliesform-footer label select{
+ 
+  color: var(--app-secondary-color);
+  cursor: pointer;
+	width: 150px;
+	padding: 7px 10px;
+  margin-left: 5px;
+  height: 40px;
+  outline: 0; 
+  border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+
+#fliesform-footer label select option{
+  padding: 15px 0;
+}
+
+#fliesForm #lb-range {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fac336;
+  position: relative;
+}
+#fliesForm #lb-range input[type='range'] {
+  width: 60%; 
+  cursor: pointer;
+  background: none !important;
+  border: none;
+}
+
+#fliesForm input[type='range'],
+#fliesForm input[type='range']::-webkit-slider-runnable-track,
+#fliesForm input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  
+}
+
+#fliesForm #lb-range input[type='range']::-webkit-slider-thumb{
+  background-color: var(--app-btn-color);
+  width: 18px;
+  height: 16px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  margin-top: -6px;
+  
+}
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: #777;
+  height: 5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  outline: none;
+}
+
+#fliesForm #lb-range input:focus{
+  outline: none;
+}
+
+#fliesForm #sh-price {
+  width: 50%;
+  margin: 5px auto;
+}
+#fliesForm #sh-price #showPrecio {
+  margin: auto;
+}
+#container-searchForm #fliesForm #fliesform-body input {
+  display: inline-block;
+  color: var(--app-secondary-color);
+  padding: 7px 8px;
+  height: 40px;
+  outline: none;
+  border: 0;
+  text-indent: 6px;
+  font: 400 12px "Lato";
+  background: #f0f0f0;
+  border:2px solid rgba(0,0,0,0.2);
+  border-radius: 12px;
+  color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+}
+#fliesForm #fecha_ida {
+  height: 35px;
+  color: var(--app-secondary-color);
+  border: none;
+  outline: none;
+  text-indent: 6px;
+  font: 400 12px "Lato";
+  background: var(--app-primary-color);
+}
+#fliesForm #fecha_vuelta {
+  height: 35px;
+  color: var(--app-secondary-color);
+  border: none;
+  outline: none;
+  text-indent: 6px;
+  font: 400 12px "Lato";
+  background: var(--app-primary-color);
+}
+
+#fliesForm #fecha_ida i {
+  background: rgba(179, 177, 177, 0.2);
+  color: var(--main-text-color);
+  border-radius: 5px;
+}
+
+#fliesForm .btn-search-a {
+  padding: 10px 0px;
+  width: 160px;
+  margin: auto;
+  border: none;
+  text-align: center;
+  font-weight: 600;
+  color: var(--app-secondary-color);
+  cursor: pointer;
+  border-radius: 5px;
+  background: var(--app-btn-color);
+  transition: 0.6s;
+}
+
+#fliesForm .btn_search-a:hover {
+  background: transparent;
+  box-shadow: 0 0 20px 10px hsla(204, 70%, 53%, 0.5);
+  color: var(--main-text-color);
+}
+
+@media all and (max-width: 800px) {
+  #fliesForm {
+    width: 100%;
+    right: 0px;
+    padding: 10px;
+    bottom: 70px;
+  }
+ 
+  #fliesForm #fliesform-body {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #fliesForm #fliesform-body label{
+    padding: 10px 0;
+  }
+  #fliesForm #fliesform-body  label span {
+    margin-left: 10px;
+  }
+
+
+  #fliesform-footer #spinner-personas {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+  }
+
+  #fliesForm #sh-price {
+    
+    margin: auto;
+    font-size: 0.8em;
+  }
+  #fliesForm .btn-search-a { 
+    width: 200px;
+    margin-left: 10px;
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    color: var(--app-secondary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    background: var(--app-btn-color);
+    transition: 0.6s;
+    padding: 12px 0;
+  }
+}
+@media all and (max-width: 600px) {
+
+  #fliesForm {
+    width: 100%;
+    padding: 10px;
+    top:0;
+    bottom: 0;
+  }
+  #fliesForm #fliesform-body {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #fliesForm label span {
+    margin-left: 10px;
+  }
+
+
+  #fliesForm .btn-search-a {
+    margin: auto;
+    padding: 7px 40px;
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    color: var(--app-secondary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    background: var(--app-btn-color);
+    transition: 0.6s;
+  }
+  #fliesform-footer #spinner-personas span:first-child{
+    padding: 4px;
+   
+  }
+  #fliesform-footer label{
+    padding: 10px 0;
+  }
+  #fliesform-footer label select{
+    width: 130px;
+  }
+  #fliesForm #fliesform-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  
+}

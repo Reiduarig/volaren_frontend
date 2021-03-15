@@ -1,0 +1,121 @@
+
+ #container-reservaInfo{
+    display: flex;
+    flex-direction: column;
+   }
+
+   
+   #reservaInfoCard{
+    width: 90%;   
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  #reservaInfoCard #resinfoCardHeader{
+      border:2px solid lightgray;
+      border-radius: 5px;
+      padding: 20px 40px;
+      background: #fff;
+  }
+  #container-reservaInfo #resinfoCardBody{
+    background: #fff;
+  }
+  #reservaInfoCard #resinfoCardHeader #resinfoProfileImage{
+      margin: 20px 0;
+  }
+  #container-reservaInfo #reservaInfoCard  h2{
+      font-weight: 600;
+  }
+  #container-reservaInfo #reservaInfoCard  h4{
+      font-weight: 600;
+      text-align: left;
+  }
+
+   #container-reservaInfo #idtablainfoReserva{
+       width: 100%;
+       margin-top: 40px;
+       
+   }
+
+   #container-reservaInfo #idtablainfoReserva table{
+       border-collapse: separate;
+        margin-bottom: 20px;
+   }
+
+   #container-reservaInfo #idtablainfoReserva th{
+       font-size: 0.9em;
+       border: none;
+       border-bottom: 1px solid black;
+   }
+   #container-reservaInfo #idtablainfoReserva td{
+       text-align: center;
+   }
+   #container-reservaInfo #resinfoDatosContacto{
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 20px 40px;
+   }
+   
+   #container-reservaInfo #resinfoDatosContacto h4{
+       margin-bottom: 20px;
+   }
+
+   #container-reservaInfo  .btn-info{
+       margin-bottom: 20px;
+       margin-left: 90px;
+       display: flex;
+       align-items: center;
+       
+   }
+   #container-reservaInfo .btn-info  #btn-return-info{
+      
+        background: var(--app-secondary-color);
+        color: var(--app-primary-color);
+        font-weight: 600;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+   }
+
+   #container-reservaInfo  .btn-info button{
+       background: rgba(255, 51, 51, 0.837);
+       border: none;
+       margin-left: 10px;
+       font-size: 1em;
+       font-weight: 600;
+       padding: 11px 20px;
+       border-radius: 5px;
+       color: var(--app-primary-color);
+       cursor: pointer;
+   }
+
+   #container-reservaInfo  .btn-info button:hover{
+       background: rgba(255, 0, 0);
+   }
+
+   @media all and (max-width: 600px) {
+       
+    #container-reservaInfo #reservaInfoCard{
+    width: 100%;   
+    margin: 0;
+    padding: 0px;
+    border-radius: 5px;
+  }
+  #container-reservaInfo #reservaInfoCard #resinfoCardHeader{
+      border:2px solid lightgray;
+      border-radius: 5px;
+      padding: 20px 8px;
+  }
+  #container-reservaInfo  .btn-info{
+    margin-top: 20px;
+    margin-left: 0px;
+   
+    
+}
+#container-reservaInfo .btn-info  #btn-return-info{
+    padding: 11px 20px;
+    font-size: 1em;
+}
+
+
+   }

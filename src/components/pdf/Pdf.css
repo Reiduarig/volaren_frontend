@@ -1,0 +1,26 @@
+#pdf-container{
+    width: 80%;
+    margin: auto;
+}
+
+#pdf-container object{
+    width: 100%;
+}
+
+#pdf-container .btn-documentPdf{
+    margin-top: 10px;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: var(--app-primary-color);
+    font-weight: 600;
+    background: blue;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+#pdf-container .documentPdfBtn{
+    padding: 15px 0;
+}
+#pdf-container .btn-documentPdf:hover{
+    background: navy;
+}

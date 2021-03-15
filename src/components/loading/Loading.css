@@ -1,0 +1,10 @@
+.app-waiting {
+    background: rgba(8, 8, 9, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    place-content: center;
+  }

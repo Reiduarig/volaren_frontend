@@ -1,0 +1,83 @@
+
+
+.container-private{
+  min-height: 350px;
+  background: rgb(236, 235, 235);
+  padding: 20px;
+}
+
+
+/* ------------------ options list ------------------------ */
+
+.optionsList {
+  width: 100%;
+  display: flex;
+  max-height: 220px;
+  background: navy;
+}
+.optionsListBox{
+  margin: 0 0;
+}
+.optionsList ul{
+  display: flex;
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+.optionsList ul li{
+  margin: 0 0;
+  padding: 10px 20px;
+  transition: 1s ease all;
+  border-radius: 2px;
+}
+.optionsList ul li:hover{
+  background: var(--app-label-color);
+
+}
+.optionsList ul li a{
+  color: var(--app-primary-color);
+ 
+}
+.optionsList ul li svg{
+  margin-right: 3px;
+}
+.optionsList li .active{
+  color:yellow;
+  background: rgba(0, 0, 0, 0);
+  
+}
+/* ---------------------------- primera seccion --------------------------------*/
+
+
+@media all and (max-width: 800px) {
+  
+  #dashboardPanel{
+    display: grid;
+    grid-template-columns: 1fr;
+   
+  }
+  .container-private{
+   
+    min-height: 350px;
+  }
+  .optionsList {
+  
+    background: navy;
+  }
+
+}
+@media all and (max-width: 600px) {
+  .optionsList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 240px;
+    margin: 0;
+    border-radius: 4px;
+    background: navy;
+    
+  }
+  .container-private h1{
+    font-size: 22px;
+  }
+}

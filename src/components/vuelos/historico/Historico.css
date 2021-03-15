@@ -1,0 +1,115 @@
+#historicoVuelos {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px;
+}
+#historicoVuelos #container-historicos .errorMessages{
+  position: absolute;
+  width: 60%;
+  margin-top: 20px;
+}
+
+#historicoVuelos .bannerHistorico{
+  border-radius: 4px;
+}
+#historicoVuelos #container-historicos{
+  width: 80%;
+  padding: 20px;
+}
+
+#historicoVuelos .cardReservaConfirmada {
+  background: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr;
+  align-items: center;
+  padding: 40px 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+#historicoVuelos .cardReservaCancelada {
+  background: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr;
+  align-items: center;
+  padding: 40px 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#historicoVuelos .cardReservaEstado{
+  color:green;
+}
+
+#historicoVuelos a {
+  color: black;
+  
+}
+
+
+
+@media all and (max-width: 800px) {
+
+  #historicoVuelos {
+    width: 90%;
+    margin: auto;
+    min-height: 0px;
+  }
+  
+  #historicoVuelos #container-historicos{
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+  
+  }
+   
+  }
+
+  @media all and (max-width: 600px) {
+    #historicoVuelos {
+      width: 100%;
+      margin: 60px 0;
+      min-height: 0px;
+      font-size: 0.8em;
+      padding: 0;
+    }
+    #historicoVuelos #container-historicos{
+      width: 100%;
+      margin: auto;
+      border-radius: 5px;
+      padding: 0px;
+  }
+
+  #historicoVuelos .cardReservaConfirmada {
+    background: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr 0.5fr 0.5fr 0.5fr;
+    align-items: center;
+    padding: 20px 0px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  #historicoVuelos .cardReservaConfirmada img{
+    width: 50px;
+    height: 15px;
+  }
+  #historicoVuelos .cardReservaConfirmada:hover{
+    background: rgb(224, 238, 224);
+  }
+  #historicoVuelos .cardReservaCancelada {
+    background: red;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr 0.5fr 0.5fr 0.5fr;
+    align-items: center;
+    padding: 20px 0px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,251 @@
+#container-listaVuelos{
+    width: 100%;
+    min-height: 1550px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 20px;
+}
+
+#listaVuelos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+    min-height: 450px;
+    position: relative;
+}
+#container-listaVuelos #listaVuelos #fliesForm{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    position: relative;
+    padding: 12px 18px;
+    right: 0;
+    bottom: 0;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+#container-listaVuelos #listaVuelos #fliesForm #fliesform-body{
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+}
+#container-listaVuelos #listaVuelos #fliesForm label{
+    margin: 6px 8px;
+}
+#container-listaVuelos #listaVuelos #fliesForm label span{
+    margin: 0 5px;
+}
+#container-listaVuelos #listaVuelos #fliesForm label #showPrecio{
+    margin: auto;
+}
+#container-listaVuelos #listaVuelos #fliesForm input{
+    display: inline-block;
+    width: 115px;
+    color: var(--app-secondary-color);
+    padding: 7px 8px;
+    height: 35px;
+    outline: none;
+    border: 0;
+    text-indent: 6px;
+    font: 400 12px "Lato";
+    background: #f0f0f0;
+    border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    color: #7b7b7b;
+    font-size: 1em;
+    color: #999;
+}
+
+#container-listaVuelos #listaVuelos #fliesForm .btn-filtro-vuelos{
+    width: 200px;
+    padding: 7px 0px;
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    color: var(--app-secondary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    background: var(--app-btn-color);
+    transition: 0.6s;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#container-listaVuelos #listaVuelos #fliesForm #sh-price{
+    margin: auto;
+}
+#container-listaVuelos #listaVuelos #fliesForm .shadow{
+    height: 35px;
+}
+
+#listaVuelos .vuelosEncontrados{
+    margin-left: 80px;
+    font-size: 0.9em;
+}
+#listaVuelos .errorMessages{
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    font-size: 1em;
+}
+
+#formFiltro{
+    display: flex;
+    align-items: baseline;
+    height: 60px;
+    margin: 0px 0 10px 100px;
+    padding: 10px;
+    
+}
+
+#formFiltro h3{
+    
+    margin-right: 10px;
+}
+
+#formFiltro button{
+    border: none;
+    padding: 10px 50px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: var(--app-text-color);
+    font-weight: 500;
+    transition: 0.5s all;
+    border-radius: 2px;
+    outline: none;
+}
+#formFiltro button:hover{
+    background: rgb(190, 224, 238);
+    
+}
+
+#container-listaVuelos #banner-listaVuelos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-height: 700px;
+  
+}
+#container-listaVuelos  #banner-listaVuelos .banner1{
+    background-image: url(../../../assets/images/banner1.png);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 600px;
+    margin: 60px auto 20px auto;
+}
+#container-listaVuelos  #banner-listaVuelos .banner2{
+    background-image: url(../../../assets/images/banner2.png);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 400px;
+    margin: 20px auto;
+}
+#container-listaVuelos  #banner-listaVuelos .banner3{
+    background-image: url(../../../assets/images/banner3.png);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 400px;
+    margin: 20px auto;
+}
+
+#profiler-fly {
+    width: 800px;
+    margin: 50px 0 50px 100px;
+    padding: 2px;  
+}
+
+@media all and (max-width: 1000px) {
+    #container-listaVuelos{
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    }
+    #container-listaVuelos #listaVuelos .banner-listaVuelos{
+       display: none;
+    }
+    #container-listaVuelos #banner-listaVuelos{
+        display: none;
+    }
+}
+
+@media all and (max-width: 800px) {
+    
+    #container-listaVuelos #listaVuelos #fliesForm{
+        position: relative;
+        padding: 12px 5px;
+        right: 0;
+        bottom: 0;
+        margin-left: 25px;
+        margin-top: 0px;
+    }
+
+    #container-listaVuelos #listaVuelos #fliesForm #fliesform-body{
+        grid-template-columns:  1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #formFiltro{
+        display: flex;
+        align-items: baseline;
+        height: 60px;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    #profiler-fly {
+        width: 650px;
+        margin: 30px auto;
+        padding: 2px; 
+        font-size: 20px;
+    }
+    #profiler-fly-default {
+        width: 650px;
+        margin: 30px auto;
+        padding: 2px; 
+        font-size: 20px;
+    }
+    
+}
+
+@media all and (max-width: 600px) {
+    #container-listaVuelos #listaVuelos #fliesForm{
+        position: relative;
+        padding: 12px 18px;
+        right: 0;
+        bottom: 0;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    #container-listaVuelos #listaVuelos #fliesForm #fliesform-body{
+        grid-template-columns:  1fr 1fr;
+    }
+
+    #formFiltro{
+      
+        height: 60px;
+        margin: 10px 0 10px 10px;
+        padding: 0px;
+      
+    }
+    #profiler-fly {
+        width: 400px;
+        margin: 0px;
+        padding: 2px; 
+        font-size: 16px;
+    }
+    #profiler-fly-default {
+        width: 400px;
+        margin: 0px;
+        padding: 2px; 
+        font-size: 16px;
+    }
+    
+    #formFiltro button{
+        border: none;
+        padding: 10px 13px;
+        margin: 0 1px;
+        cursor: pointer;
+        color: var(--app-text-color);
+        font-weight: 500;
+        transition: 0.5s all;
+        border-radius: 2px;
+    }
+}

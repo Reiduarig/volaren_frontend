@@ -1,0 +1,165 @@
+.chat-app {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    padding: 60px 0;
+}
+
+.chat-app .no-content-message {
+    color: #cccccc;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.chat-app .channel-list {
+    width: calc(20% - 12px);
+    border: 1px solid navy;
+    margin: 10px;
+    margin-right: 10px;
+    min-height: 400px;
+    background: navy;
+    border-radius: 4px;
+    color:white;
+}
+.chat-app .channel-list h2{
+    color: white;
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid white;
+}
+.chat-app .channel-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding: 20px;
+    transition: 0.5s ease all;
+    cursor: pointer;
+}
+.chat-app .channel-item:hover{
+    background: #cccccc;
+}
+.chat-app .channel-item div {
+        font-weight: bold;
+}
+.chat-app .channel-item span {
+    font-size: 0.9em;
+}
+
+.chat-app .channel-item span:hover {
+    background-color: rgb(224, 224, 224);
+    cursor: pointer;
+}
+    
+
+.chat-app .messages-panel {
+    width: calc(80% - 12px);
+    border: 1px solid rgb(224, 224, 224);
+    margin: 10px;
+    margin-left: 0;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 4px;
+    background: white;
+}
+.chat-app .messages-panel .meesages-list {
+    align-self: stretch;
+    padding: 20px;
+    height: 100%;
+}
+
+.chat-app .messages-panel .meesages-list .message-item{
+    display: flex;
+    align-items: center;
+}
+.chat-app .messages-panel .meesages-list .message-item span:first-child{
+    color: lightgray;
+    font-size: 0.9em;
+}
+.chat-app .messages-panel .meesages-list .message-item div{
+    color: blue;
+    text-transform: capitalize;
+}
+.chat-app .messages-panel .meesages-list .message-item span{
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.chat-app .messages-panel .messages-input {
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid rgb(224, 224, 224);
+    background-color: #d6d6d6;
+    display: flex;
+}
+.chat-app .messages-panel input {
+    margin: auto;
+    height: 40px;
+    width: 100%;
+    margin-left: 15px;
+    border-radius: 15px;
+    border: 1px solid rgb(224, 224, 224);
+}
+.chat-app .messages-panel input:focus {
+    border-radius: 15px;
+    border: 2px solid #66a6ff;
+    outline: none;
+}
+            
+
+.chat-app .messages-panel button {
+    width: 70px;
+    margin: auto 10px;
+    background-color: #0e62da;
+    color: white;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px 13px;
+    outline: none;
+}
+.chat-app .messages-panel button:hover {
+    cursor: pointer;
+    background-color: #66a6ff;
+}
+         
+@media all and (max-width: 600px) {
+    .chat-app {
+        width: 100%;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .chat-app .channel-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 100%;
+        margin: 0px;
+        margin-right:0px;
+        min-height: 100px;
+        font-size: 0.7em;
+    }
+    .chat-app .channel-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        transition: 0.5s ease all;
+        cursor: pointer;
+    }
+    .chat-app .messages-panel {
+        width: 100%;
+        margin: 0px;
+        margin-left: 0;
+        min-height: 400px;
+    }
+    .chat-app .messages-panel .meesages-list {
+        align-self: stretch;
+        height: 400px;
+    }
+
+}

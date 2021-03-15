@@ -1,38 +1,91 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --main-text-color: rgb(0, 0, 0);
+  --main-background-color: #fff;
+  --secondary-text-color: rgb(255, 255, 255);
+  --secondary-background-color: #000;
+  --app-primary-color: rgb(255, 255, 255);
+  --app-secondary-color: #2e4161;
+  --app-terciary-color: #6b9d32;
+  --app-btn-color: #fa9579;
+  --app-label-color:#fac336;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+  font-size: 1em;
+ 
+}
+
+
+::-webkit-input-placeholder {
+  color: #56585b;
+}
+
+::-moz-placeholder {
+  color: #56585b;
+}
+
+:-moz-placeholder {
+  color: #56585b;
+}
+
+
+.app-waiting {
+  background: rgba(8, 8, 9, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  place-content: center;
+}
+
+.error{
+  background: rgb(225, 120, 101);
+  color: var(--app-primary-color);
+  font-weight: 600;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+.errorMessages{
+  background: rgb(238, 144, 76);
+  color: var(--app-primary-color);
+  font-weight: 600;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.8em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media all and (max-width: 800px) {
+  body {
+    font-size: 0.9rem;
   }
 }

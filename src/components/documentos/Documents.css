@@ -1,0 +1,37 @@
+.containerDocuments{
+    min-height: 500px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.containerDocuments .headerDocuments{
+  color: var(--app-primary-color);
+  padding: 2px;
+  text-indent: 4px;
+}
+
+.containerDocuments #lista-docs-reserva{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px;
+}
+
+.containerDocuments #lista-docs-reserva .ant-card-body{
+    padding: 18px 5px;
+}
+
+.containerDocuments #lista-docs-reserva .ant-card-body p{
+    padding: 10px 0;
+}
+
+.containerDocuments #lista-docs-reserva a{
+    color: red;
+    padding: 0px 20px
+}
+
+
+@media all and (max-width: 600px) {
+    .containerDocuments #lista-docs-reserva{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

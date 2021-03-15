@@ -1,0 +1,76 @@
+.wrapper-cover{
+   
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: 0.9s;
+    position: absolute;
+    z-index: 50;
+    left: 0;
+    top:50px;
+    color:rgb(255, 255, 255);
+    font-family:'Roboto';
+    font-weight:300;
+    overflow:hidden;
+   
+}
+
+.wrapper-cover div {
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+  
+  .wrapper-cover div:first-of-type {    /* For increasing performance 
+                         ID/Class should've been used. 
+                         For a small demo 
+                         it's okaish for now */
+    animation: showup 10s infinite;
+  }
+  
+  .wrapper-cover div:last-of-type {
+    width:0px;
+    animation: reveal 10s infinite;
+    
+  }
+  
+  .wrapper-cover div:last-of-type span {
+    margin-left:-355px;
+    animation: slidein 10s forwards;
+  }
+
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  
+  @keyframes slidein {
+      0% { margin-left:-800px; }
+      20% { margin-left:-800px; }
+      35% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+  
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:570px;}
+      80% {opacity:1;}
+      100% {opacity:0;width:650px;}
+  }
+  
+  
+  .wrapper-cover p {
+    font-size:12px;
+    color:#999;
+    margin-top:200px;
+  }
+
+  @media all and (max-width:600px) {
+    .wrapper-cover{
+      display: none;
+    }
+  }

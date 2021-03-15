@@ -1,0 +1,57 @@
+.footer{
+  
+  background-image: url(../../assets/images/img-footer.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.footer #capa-footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: rgb(45, 34, 73);
+  text-align: center;
+  padding: 40px 0;
+  font-size: 0.8em;
+  background: rgba(15, 1, 60, 0.8);
+}
+.content-footer{
+  color: rgb(134, 133, 133);
+  list-style: none;
+  margin: 0px auto;
+}
+.content-footer h4{
+  font-weight: 600;
+  color: rgb(134, 133, 133);
+}
+.content-footer nav{
+  text-align: justify;
+}
+
+.footer #capa-footer #rrss{
+  display: flex;
+  justify-content: space-between;
+}
+.footer #capa-footer img{
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+@media all and (max-width: 800px) {
+  .footer #capa-footer{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .content-footer nav{
+    text-align: center;
+  }
+  .content-footer{
+    margin-top: 15px;
+  }
+  .content-footer h4{
+    font-size: 1.2em;
+  }
+  .carousel-row{
+    display: none;
+  }
+}

@@ -1,0 +1,59 @@
+/*---------------------------------  Redirect Reserva ---------------------------------------*/
+
+.containerRedirect{
+    width: 80%;
+    margin: auto;
+  }
+.containerRedirect .cardInfo{
+    margin: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+.containerRedirect .cardInfo h1{
+    text-align: center;
+}
+.containerRedirect .cardInfo svg{
+    margin: 40px auto;
+}
+.containerRedirect .linksContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin:20px auto;
+}
+.containerRedirect .linksContainer a{
+    
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    color:white;
+    font-weight: 600;
+    transition: 0.5s ease all;
+}
+.containerRedirect .linksContainer a:first-child{
+    background: blue;
+}
+.containerRedirect .linksContainer a:first-child:hover{
+    background: navy;
+}
+.containerRedirect .linksContainer a:last-child{
+    background: lightgreen;
+}
+.containerRedirect .linksContainer a:last-child:hover{
+    background: green;
+}
+
+@media all and (max-width: 600px) {
+    .containerRedirect{
+        width: 100%;
+        font-size: 0.9em;
+    }
+    .containerRedirect .linksContainer{
+        width: 80%;
+        margin:20px auto;
+    }
+    .containerRedirect .cardInfo{
+        margin: 20px 0;
+    }
+}

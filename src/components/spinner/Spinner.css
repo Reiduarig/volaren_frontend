@@ -1,0 +1,37 @@
+.spinner {
+    border: 1px solid black;
+    display: flex;
+    width: 70px;
+    margin: 0px 6px;
+    height: 20px;
+    text-align: center;
+    background: var(--app-secondary-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.spinner div {
+    width: 22px;
+    background: var(--app-btn-color);
+    user-select: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    color: cornsilk;
+}
+
+.spinner div:hover {
+    background: var(--app-btn-color);
+}
+
+.spinner span {
+    flex: 1 auto;
+    margin: auto;
+    color: white !important;
+    font-size: 1em !important;
+}
+
+.spinner span #number {
+    margin: auto;
+}

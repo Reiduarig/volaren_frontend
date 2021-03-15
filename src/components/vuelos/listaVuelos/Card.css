@@ -1,0 +1,362 @@
+/*---------------------------------- card ---------------------*/
+
+
+  #container-profile {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 5px;
+    background:  var(--app-primary-color);
+    color: var(--secondary-secondary-color);
+    box-shadow: 2px 2px rgba(8, 8, 9, 0.3), 0 2px 4px 0 rgba(19, 26, 31, 0.22) !important;
+
+  }
+
+  #container-profile #profile-reserve a {
+    padding: 5em 0em;
+    letter-spacing: 0px;
+  }
+  
+  #container-profile #info-fly {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    border-right: 1px solid black;
+    border-radius: 5px;
+  }
+  #container-profile #info-fly #info-pop{
+    position: absolute;
+    right: 40px;
+    top:5px;
+    color:  var(--app-primary-color);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+  }
+  #container-profile #info-fly #info-pop svg{
+    color: var(--app-primary-color);
+  }
+  #container-profile #info-fly #info-pop button{
+   background: transparent;
+   border: none;
+  }
+  
+  #container-profile #info-fly #profile-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+    background: var(--app-secondary-color);
+    color: var(--app-primary-color);
+    font-weight: 600;
+    position: relative;
+    border-radius: 2px;
+    height: 50px;
+  }
+  
+  #container-profile #info-fly #profile-header .profileCities {
+    display: flex;
+    width: 45%;
+    align-items: baseline;
+  }
+  #container-profile #info-fly #profile-header .profileCities p {
+    padding: 0px 30px;
+    margin-bottom: 0;
+  }
+  #container-profile #info-fly #profile-header .profileCities i {
+    color: var(--app-primary-color);
+
+  }
+  #container-profile #info-fly #profile-header .profileFly-fecha {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 100px;
+    
+  }
+  #container-profile #info-fly #profile-header .profileFly-fecha p{
+    margin-bottom: 0;
+  }
+  #container-profile #info-fly #profile-header .profileFly-fecha i{
+   color: var(--app-primary-color);
+   font-size: 1.3em;
+  }
+
+  #info-fly #profile-footer .profileFly-fecha span,
+  i {
+    padding:  10px;
+  }
+
+  #container-profile #info-fly #profile-stop {
+    display: grid;
+    grid-template-columns: 0.5fr 0.8fr 1fr 0.8fr 1fr;
+    padding:  20px 10px 40px 10px;
+    align-items: center;
+    position: relative;
+  }
+
+  #container-profile #info-fly #profile-stop #profile-airlineImage img{
+    width: 80px;
+  }
+  
+  #container-profile #info-fly #profile-airline{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    font-size: 0.9em;
+  }
+  #container-profile #info-fly #profile-airline span:first-child{
+    font-size: 1.1em;
+  }
+  #container-profile #info-fly #profile-airline span:last-child{
+    text-transform: capitalize;
+    font-size: 0.8em;
+  }
+
+  #container-profile #info-fly #profile-time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #container-profile #info-fly #profile-time #profile-time-up{
+    font-weight: 600;
+    font-size: 1.1em;
+  }
+  #container-profile #info-fly #profile-time #profile-time-down{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    margin-right: 10px;
+  }
+  #container-profile #info-fly #profile-time #profile-time-down span{
+    margin: 0 8px;
+  }
+
+  #container-profile #info-fly #profile-stop #profile-duracion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  #container-profile #info-fly #profile-duracion span{
+    font-size: 0.8em;
+  }
+  #container-profile #info-fly #profile-duracion span:last-child{
+    font-size: 0.7em;
+  }
+  #container-profile #info-fly #profile-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+  }
+  
+  #container-profile #info-fly #profile-price span {
+    font-size: 1.5em;
+    font-weight: 600;
+   
+  }
+  #container-profile #info-fly #profile-price span span{
+    font-size: 0.6em;
+    font-weight: normal;
+  }
+  
+  #container-profile  #info-fly #profile-price a {
+    background: var(--app-btn-color);
+    font-weight: 600;
+    padding: 4px 28px;
+    letter-spacing: 1px;
+    transition: ease 0.5s;
+    color: var(--app-primary-color);
+    cursor: pointer;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  #container-profile   #info-fly #profile-price a:hover {
+    background: red;
+    
+   }
+
+   .ant-popover-title svg{
+     margin-right: 5px;
+   }
+   .Pop-profileCities{
+     display: flex;
+     align-items: center;
+   }
+   .Pop-profileCities2{
+    display: flex;
+    align-items: center;
+    min-height: 32px;
+    border-bottom: 1px solid #f0f0f0;
+   }
+   .Pop-profileCities2 svg{
+     margin-right: 5px;
+   }
+   
+   .pop-profileCities i, span{
+     font-weight: 600;
+   }
+   .ant-popover-content{
+     width: 600px;
+    
+   }
+   
+   .pop-profileFly-itinerarioHeader{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 10px 10px;
+   }
+   .pop-profileFly-itinerarioHeader svg{
+     margin-left: 20px;
+   }
+   .pop-profileFly-itinerarioBody{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     margin:10px;
+     padding: 10px 0;
+   }
+   .pop-profileFly-itinerarioBody svg{
+    margin: 0 30px;
+    color: lightgray;
+   }
+   .pop-profileFly-itinerarioBody span{
+     padding: 5px 0;
+   }
+   .pop-profileFly-itinerarioBody .itinerarioPopLine{
+     border-left: 1px solid lightgray;
+     height: 30px;
+     margin-left: 36px;
+   }
+   
+/* acordeon */
+
+  #profile-footer .dropdown-info {
+    color: teal;
+   
+  }
+  #profile-footer .dropdown-info i{
+    color: teal;
+    font-size: 0.6em;
+  }
+  
+  #profile-footer .dropdown-info-btn{
+    width: 400px;
+    height: 35px;
+    border:none;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+  
+  }
+
+  #profiler-fly  .dropdown-card{
+    display: none;
+    grid-template-columns: 48% 48%;
+    left: 0;
+    width: 82%;
+    margin: auto;
+    background: var(--main-text-color);
+    color: var(--secondary-text-color);
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 0.9em;
+    position: absolute;
+    z-index: -1;
+    
+  }
+
+  #profile-footer .dropdown-info-btn:hover .dropdown-card {
+    display: grid;
+    animation-name: translacion;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+    animation-delay: 1s;
+    transition-delay: 1s;
+    transform-origin: center;
+    transition:  0.5s;
+  
+}
+
+  #profiler-fly  .dropdown-card #bagagge-info{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    margin: auto;
+    
+  }
+  #profiler-fly  .dropdown-card  .bag{
+    padding: 5px;
+    
+  }
+  #profiler-fly  .dropdown-card #asiento-info{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+
+  .fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+
+@media all and (max-width: 800px) {
+
+  #container-profile {
+    width: 100%;
+    min-height: 100px;
+    font-size: 0.6em;
+    margin-left: 0px;
+  }
+  #container-profile #info-fly #profile-header .profileCities p {
+    padding: 10px 20px;
+  }
+  .ant-popover-content{
+    width: 450px;
+   
+  }
+  
+}
+  @media all and (max-width: 600px) {
+  
+  
+    #container-profile {
+      position: relative;
+      display: flex;
+      width: 100%;
+      min-height: 100px;
+      margin-left: 0px;
+      border-radius: 5px;
+      background:  var(--app-primary-color);
+      color: var(--secondary-secondary-color);
+      box-shadow: 2px 2px rgba(8, 8, 9, 0.3), 0 2px 4px 0 rgba(19, 26, 31, 0.22) !important;
+      padding: 5px;
+      font-size: 0.6em;
+    }
+
+
+    #container-profile #info-fly #profile-header .profileCities p {
+      padding: 10px 10px;
+    }
+    .ant-popover-content{
+      width: 400px;
+      font-size: 0.9em;
+    }
+    .cardDefault{
+      border: 3px solid green;
+    }
+  }
+

@@ -1,0 +1,208 @@
+#perfil-container{
+  width: 80%;
+  border-radius: 10px;   
+  padding: 60px 20px;
+}
+
+.profile-header-title{
+  background-color: var(--app-secondary-color);
+  padding: 2px;
+  color:  var(--app-primary-color);
+  text-indent: 5px;
+}
+
+  /* Profile sidebar */
+  .profile-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    border-radius: 5px;
+    border-radius: 2px;
+  }
+  .profile-userpic{
+    background: #fff;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+  }
+  
+  .profile-userpic h3{
+    text-transform: uppercase;
+  }
+
+  .profile-userpic .ant-card-body{
+    padding: 15px 24px;
+  }
+  .profile-userpic img {
+    height: 250px; 
+    border-radius: 8px;
+  }
+  
+ /* -------------------- edit usuario -------------------------*/
+  
+ .edit-user-container{
+    border-radius: 5px;
+    margin: 40px 0;
+ }
+
+ .edit-user-container #edit-userForm #form-control{
+   width: 100%;
+ }
+
+ .edit-user-container form .lbl-txt{
+  font-size: 1em;
+  font-weight: 600;
+  margin:0;
+}
+.edit-user-container #btn-image-upload{
+  position: relative;
+  margin-top: 30px;
+}
+
+.edit-user-container label[for="inputFileEdit"] {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #fff;
+  background-color: #106ba0;
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 6px 20px !important;
+  width: fit-content;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.edit-user-container label[for="inputFileEdit"] i{
+  padding: 8px 0;
+}
+.edit-user-container label[for="inputFileEdit"]:hover {
+    background: navy;
+}
+.edit-user-container input[type="file"]#inputFileEdit {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.edit-user-container form .edit-input{
+  width: 70%;
+  margin: 15px 0;
+  border: none;
+  padding: 8px;
+  text-indent: 4px;
+  outline: none;
+  color: var(--app-secondary-color);
+  border: 1px solid lightgray;
+}
+.edit-user-container form .edit-input:focus{
+  border: 1px solid blue;
+}
+
+#btn-edit-perfil{
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  margin-top: 20px;
+}
+
+ .edit-user-container button{
+  border: none;
+  padding: 11px;
+  border-radius: 5px;
+  background-color: yellowgreen;
+  color: var(--app-primary-color);
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-right: 20px;
+}
+
+
+ .edit-user-container button:hover{
+  background-color: green;
+}
+
+.edit-user-container #btn-return{
+  background: blue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--app-primary-color);
+  font-weight: 600;
+  transition: 0.5s;
+}
+  
+.edit-user-container #btn-return:hover{
+  background: navy;
+  
+}
+
+  @media all and (max-width:800px) {
+    #perfil-container{
+      width: 100%;
+      margin: auto;
+      border-radius: 10px;   
+    }
+    #perfil-container .account{
+      font-size: 0.8em;
+    }
+    .edit-user-container #edit-userForm{
+      width: 100%;
+     }
+   
+    .profile-userpic {
+     text-align: center;
+     
+    }
+    .edit-user-container{
+  
+      border-radius: 5px;
+      margin: 40px auto;
+     
+     }
+    .edit-user-container #edit-userForm{
+      font-size: 0.8em;
+    }
+    .edit-user-container form .edit-input{
+      width: 100%;
+      padding: 8px;
+    }
+
+    #btn-edit-perfil{
+      display: flex;
+      align-items: baseline;
+      margin-top: 20px;
+      font-size: 0.9em;
+    }
+    
+    .edit-user-container button{
+      font-size: 1em;
+      margin-right: 10px;
+    }
+
+    .edit-user-container label[for="inputFileEdit"] {
+      font-size: 0.9em;
+      padding: 6px 10px !important;
+      margin-right: 10px;
+    }
+  
+    @media all and (max-width: 600px) {
+      #perfil-container{
+        width: 100%;
+        margin: auto;
+        border-radius: 10px;   
+      }
+      .profile-sidebar {
+        grid-template-columns: 1fr;
+      }
+      .edit-user-container form .edit-input{
+        width: 100%;
+      }
+  }
+   
+}
+  
