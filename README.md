@@ -1,3 +1,18 @@
+
+![landing1](https://user-images.githubusercontent.com/70781686/116008436-d4856200-a614-11eb-8f24-4c2cd58bcbef.png)
+![landing2](https://user-images.githubusercontent.com/70781686/116008440-dbac7000-a614-11eb-9ac2-2d5e9afad0bf.png)
+![busqueda](https://user-images.githubusercontent.com/70781686/116008468-00084c80-a615-11eb-81c1-0536d9a2ea7a.png)
+![reserva](https://user-images.githubusercontent.com/70781686/116008491-25955600-a615-11eb-8de2-60b1794af2e5.png)
+![pago](https://user-images.githubusercontent.com/70781686/116008519-48276f00-a615-11eb-824b-3585735644de.png)
+![listaReservas](https://user-images.githubusercontent.com/70781686/116008542-6beab500-a615-11eb-9432-0b9bd19cfdcc.png)
+![documentos](https://user-images.githubusercontent.com/70781686/116008563-8329a280-a615-11eb-8cfb-72c267736211.png)
+![datos_facturacion](https://user-images.githubusercontent.com/70781686/116008588-a05e7100-a615-11eb-835d-b9c8fbf011f1.png)
+![chat](https://user-images.githubusercontent.com/70781686/116008602-ba984f00-a615-11eb-80e4-23735745081b.png)
+![blog](https://user-images.githubusercontent.com/70781686/116008631-e3204900-a615-11eb-9eb7-87e390d6814c.png)
+![registro](https://user-images.githubusercontent.com/70781686/116008668-05b26200-a616-11eb-9031-37c6b697873a.png)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
